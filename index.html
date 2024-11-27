@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./style.css">
+
+
+    <title>Positivus</title>
+</head>
+
+<body class="px-6 md:px-10 lg:px-20 pt-10 bg-white">
+    <div>
+        <nav class="fixed top-0 left-0 w-full bg-white z-50 pt-5">
+            <div class="container mx-auto flex items-center justify-between ">
+                <!-- Logo -->
+                <img src="./image/logo.svg" width="219.54px" height="56px" alt="Positivus" />
+                <!-- Menu and Button Group -->
+                <div class="hidden md:flex items-center space-x-6">
+                    <ul class="flex  space-x-6">
+                        <li><a href="#home" class="text-black hover:text-blue-500 text-2xl">About us</a></li>
+                        <li><a href="#about" class="text-black hover:text-blue-500 text-2xl">Services</a></li>
+                        <li><a href="#services" class="text-black hover:text-blue-500 text-2xl">Use Cases</a></li>
+                        <li><a href="#pricing" class="text-black hover:text-blue-500 text-2xl">Pricing</a></li>
+                        <li><a href="#blog" class="text-black hover:text-blue-500 text-2xl">Blog</a></li>
+                    </ul>
+                    <button href="#"
+                        class="p-3 px-6 border border-black text-black bg-white rounded-lg hover:bg-gray-200 text-2xl">
+                        Request a quote
+                    </button>
+                </div>
+                
+                
+                <div class="md:hidden relative container mx-auto p-6">
+                    <div id="mobile-menu"
+                        class=" items-center hidden  py-8 mt-10  bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                        <ul >
+                            <li><a href="#home" class="text-black hover:text-blue-500 text-xl">About us</a></li>
+                            <li><a href="#about" class="text-black hover:text-blue-500 text-xl">Services</a></li>
+                            <li><a href="#services" class="text-black hover:text-blue-500 text-xl">Use Cases</a></li>
+                            <li><a href="#pricing" class="text-black hover:text-blue-500 text-xl">Pricing</a></li>
+                            <li><a href="#blog" class="text-black hover:text-blue-500 text-xl">Blog</a></li>
+                        </ul>
+                        <button href="#" class="p-3 px-6 border border-black text-black bg-white rounded-lg hover:bg-gray-200 text-2xl">
+                            Request a quote
+                        </button>
+                    </div>
+                </div>
+           
+
+                <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="md:hidden text-black pr-10" title="navbar">
+                <svg width="26" height="19" viewBox="0 0 26 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 1.80664H25" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M1 9.80664H25" stroke="black" stroke-width="2" stroke-linecap="round" />
+                    <path d="M1 17.8066H25" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+
+            </button>
+
+            </div>
+        </nav>
+    </div>
+
+    <section id="home" class="space-y-12  text-black">
+        <!-- Main Section -->
+         <br><br>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10  auto-rows-aut">
+            <!-- Left Content -->
+            <div class="grid grid-rows-1 gap-3 text-left  sm:text-left">
+                <div class="sm:order-1">
+                <h1 class="sm:text-5xl md:text-6xl lg:text-7xl font-medium leading-tight">
+                    Navigating the <br>
+                     digital landscape <br>
+                      for success
+                </h1>
+                </div>
+                <div class="sm:order-3">
+                <p class="text-black lg:3xl md:text-2xl sm:1xl font-normal">
+                    Our digital marketing agency helps businesses <br>
+                    grow and succeed online through a range of    <br>
+                    services including SEO, PPC, social media marketing, <br>
+                    and content creation.                         <br>
+                </p>
+                <br>
+                <a href="#" class="inline-block p-3 px-6 text-white bg-black rounded-xl sm:justify-center">
+                    Book a consultation
+                </a>
+                </div>
+            </div>
+            <!-- Right Image -->
+            <div class="flex justify-center sm:order-2">
+                <img src="./image/ladingpage.svg" class="w-[600] h-[515]" alt="Landing Page Illustration" />
+            </div>
+        </div>
+
+
+        <!-- Client Logos Section -->
+       <div class="grid grid-cols-2 md:grid-cols-6 gap-6 items-center pb-10 mt-0">
+    <img src="./image/amazon.svg" alt="Amazon" class="h-8 mx-auto">
+    <img src="./image/dribble.svg" alt="Dribbble" class="h-8 mx-auto">
+    <img src="./image/hubspot.svg" alt="HubSpot" class="h-8 mx-auto">
+    <img src="./image/notion.svg" alt="Notion" class="h-8 mx-auto">
+    <img src="./image/netflix.svg" alt="Netflix" class="h-8 mx-auto">
+    <img src="./image/zoom.svg" alt="Zoom" class="h-8 mx-auto">
+</div>
+
+    </section>
+
+    <!-- Services Section -->
+<section id="services" class="py-20 bg-white text-gray-800">
+    <div class="container mx-auto text-center">
+    <div class="flex items-center space-x-4">
+        <!-- Title -->
+        <h2 class="text-4xl font-semibold px-2 py-1 bg-lime-300 text-black rounded-md">
+            Services
+        </h2>
+        <!-- Description -->
+        <p class="text-sm text-gray-700">
+            At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These
+            services include:
+        </p>
+    </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+           <!--1st-->
+            <div
+            class="h-[310px] w-auto rounded-[45px] p-10 text-left border border-black bg-gray-100 shadow-[0px_5px_0px_0px_rgba(25,26,35,1)] flex flex-col justify-between transition transform hover:-translate-y-1 ">
+          
+                <div class="grid grid-cols-2">
+                
+                    <div class=" mr-4">
+                     
+                        <h3 class="font-medium text-[30px] leading-[38.28px]">
+                            <span class="bg-lime-300 text-black px-1 rounded">Search engine</span><br>
+                            <span class="bg-lime-300 text-black px-1 rounded">optimization</span>
+                        </h3>
+                        <!-- Image -->
+                        <br><br> <br> <br>
+
+                        <div class="mt-4 flex items-center inline-block">
+                        <!-- Icon -->
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#191A23" />
+                                <path
+                                d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12.75 27.299L30.0705 17.299L28.5705 14.701L11.25 24.701L12.75 27.299Z"
+                                fill="#B9FF66" />
+                            </svg>
+                        <!-- Learn More Link -->
+                            <a href="#" class="text-black  hover:underline">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div class="pt-7">
+                    <!-- Learn More Section -->
+                        <img src="./image/1.png" alt="" class="h-[170px] w-[210px] ml-auto">
+                   
+                    </div>
+                </div>
+            </div>
+            <!--2nd-->
+            <div
+                class="h-[310px] w-auto rounded-[45px] p-10 text-left border border-black bg-lime-300 shadow-[0px_5px_0px_0px_rgba(25,26,35,1)] flex flex-col justify-between transition transform hover:-translate-y-1">
+                <!-- Columns Container -->
+                <div class="grid grid-cols-2">
+                    <!-- First Column with Two Rows -->
+                    <div class=" mr-4">
+                        <!-- Title -->
+                        <h3 class="font-medium text-[30px] leading-[38.28px]">
+                            <span class="bg-white text-black px-1 rounded">Pay-per-click</span><br>
+                            <span class="bg-white text-black px-1 rounded">advertising</span>
+                        </h3>
+                        <!-- Image -->
+                        <br><br> <br> <br>
+            
+                        <div class="mt-4 flex items-center">
+                            <!-- Icon -->
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="mr-2">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#191A23" />
+                                <path
+                                    d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12.75 27.299L30.0705 17.299L28.5705 14.701L11.25 24.701L12.75 27.299Z"
+                                    fill="#B9FF66" />
+                            </svg>
+                            <!-- Learn More Link -->
+                            <a href="#" class="text-black  hover:underline">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div class="pt-7">
+                        <!-- Learn More Section -->
+                        <img src="./image/2.png" alt="" class="h-[170px] w-[210px] ml-auto">
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+
+            <!--3rd-->
+            <div
+                class="h-[310px] w-auto rounded-[45px] p-10 text-left border border-black bg-black shadow-[0px_5px_0px_0px_rgba(25,26,35,1)] flex flex-col justify-between transition transform hover:-translate-y-1 ">
+                <!-- Columns Container -->
+                <div class="grid grid-cols-2">
+                    <!-- First Column with Two Rows -->
+                    <div class=" mr-4">
+                        <!-- Title -->
+                        <h3 class="font-medium text-[30px] leading-[38.28px]">
+                            <span class="bg-white text-black px-1 rounded">Social Media</span><br>
+                            <span class="bg-white text-black px-1 rounded">Marketing</span>
+                        </h3>
+                        <!-- Image -->
+                        <br><br> <br> <br>
+            
+                        <div class="mt-4 flex items-center">
+                            <!-- Icon -->
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#FFFFFF" />
+                                <path
+                                    d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12.75 27.299L30.0705 17.299L28.5705 14.701L11.25 24.701L12.75 27.299Z"
+                                    fill="#191A23" />
+                            </svg>
+                            <!-- Learn More Link -->
+                            <a href="#" class="text-white  hover:underline">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div class="pt-7">
+                        <!-- Learn More Section -->
+                        <img src="./image/3.png" alt="" class="h-[170px] w-[210px] ml-auto">
+            
+                    </div>
+                </div>
+            </div>
+            <!--4TH-->
+             <div
+            class="h-[310px] w-auto rounded-[45px] p-10 text-left border border-black bg-gray-100 shadow-[0px_5px_0px_0px_rgba(25,26,35,1)] flex flex-col justify-between transition transform hover:-translate-y-1 ">
+            <!-- Columns Container -->
+                <div class="grid grid-cols-2">
+                <!-- First Column with Two Rows -->
+                    <div class=" mr-4">
+                        <!-- Title -->
+                        <h3 class="font-medium text-[30px] leading-[38.28px]">
+                        <span class="bg-lime-300 text-black px-1 rounded">Email</span><br>
+                        <span class="bg-lime-300 text-black px-1 rounded">Marketing</span>
+                        </h3>
+                        <!-- Image -->
+                        <br><br> <br> <br>
+
+                        <div class="mt-4 flex items-center inline-block">
+                        <!-- Icon -->
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg" class="mr-2">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#191A23" />
+                                <path
+                                d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12.75 27.299L30.0705 17.299L28.5705 14.701L11.25 24.701L12.75 27.299Z"
+                                fill="#B9FF66" />
+                            </svg>
+                        <!-- Learn More Link -->
+                            <a href="#" class="text-gray-900  hover:underline">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div class="pt-7">
+                    <!-- Learn More Section -->
+                        <img src="./image/4.png" alt="" class="h-[170px] w-[210px] ml-auto">
+                   
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+            <!--5th-->
+            <div
+                class="h-[310px] w-auto rounded-[45px] p-10 text-left border border-black bg-lime-300 shadow-[0px_5px_0px_0px_rgba(25,26,35,1)] flex flex-col justify-between transition transform hover:-translate-y-1 ">
+                <!-- Columns Container -->
+                <div class="grid grid-cols-2">
+                    <!-- First Column with Two Rows -->
+                    <div class=" mr-4">
+                        <!-- Title -->
+                        <h3 class="font-medium text-[30px] leading-[38.28px]">
+                            <span class="bg-white text-black px-1 rounded">Content</span><br>
+                            <span class="bg-white text-black px-1 rounded">Creation</span>
+                        </h3>
+                        <!-- Image -->
+                        <br><br> <br> <br>
+        
+                        <div class="mt-4 flex items-center">
+                            <!-- Icon -->
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="mr-2">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#191A23" />
+                                <path
+                                    d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12.75 27.299L30.0705 17.299L28.5705 14.701L11.25 24.701L12.75 27.299Z"
+                                    fill="#B9FF66" />
+                            </svg>
+                            <!-- Learn More Link -->
+                            <a href="#" class="text-black  hover:underline">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div class="pt-7">
+                        <!-- Learn More Section -->
+                        <img src="./image/5.png" alt="" class="h-[170px] w-[210px] ml-auto">
+        
+                    </div>
+                </div>
+            </div>
+
+            <!--6th-->
+            <div
+                class="h-[310px] w-auto rounded-[45px] p-10 text-left border border-black bg-black shadow-[0px_5px_0px_0px_rgba(25,26,35,1)] flex flex-col justify-between transition transform hover:-translate-y-1 ">
+                <!-- Columns Container -->
+                <div class="grid grid-cols-2">
+                    <!-- First Column with Two Rows -->
+                    <div class=" mr-4">
+                        <!-- Title -->
+                        <h3 class="font-medium text-[30px] leading-[38.28px]">
+                            <span class="bg-lime-300 text-black px-1 rounded">Analytics and</span><br>
+                            <span class="bg-lime-300 text-black px-1 rounded">Tracking</span>
+                        </h3>
+                        <!-- Image -->
+                        <br><br> <br> <br>
+            
+                        <div class="mt-4 flex items-center">
+                            <!-- Icon -->
+                            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                class="mr-2">
+                                <circle cx="20.5" cy="20.5" r="20.5" fill="#FFFFFF" />
+                                <path
+                                    d="M11.25 24.701C10.5326 25.1152 10.2867 26.0326 10.701 26.75C11.1152 27.4674 12.0326 27.7133 12.75 27.299L11.25 24.701ZM30.7694 16.3882C30.9838 15.588 30.5089 14.7655 29.7087 14.5511L16.6687 11.0571C15.8685 10.8426 15.046 11.3175 14.8316 12.1177C14.6172 12.9179 15.0921 13.7404 15.8923 13.9548L27.4834 17.0607L24.3776 28.6518C24.1631 29.452 24.638 30.2745 25.4382 30.4889C26.2384 30.7033 27.0609 30.2284 27.2753 29.4282L30.7694 16.3882ZM12.75 27.299L30.0705 17.299L28.5705 14.701L11.25 24.701L12.75 27.299Z"
+                                    fill="#191A23" />
+                            </svg>
+                            <!-- Learn More Link -->
+                            <a href="#" class="text-white  hover:underline">Learn more</a>
+                        </div>
+                    </div>
+                    <!-- Second Column -->
+                    <div class="pt-7">
+                        <!-- Learn More Section -->
+                        <img src="./image/6.png" alt="" class="h-[170px] w-[210px] ml-auto">
+            
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+
+
+    <footer class=" bg-black pt-12 pb-12 text-white rounded-tl-[45px] rounded-tr-[45px]">
+        <div class="container mx-auto px-6 grid md:grid-cols-1 gap-8">
+            <!-- Left Section -->
+        <div class="flex flex-wrap items-center justify-between gap-4">
+            <!-- Logo -->
+            <img src="./image/logo_white.png" width="144px" height="24px" alt="Positivus" class="mb-0" />
+        
+            <!-- Navigation Links -->
+            <ul class="flex flex-wrap gap-6 text-sm">
+                <li><a href="#about" class="hover:text-lime-400">About us</a></li>
+                <li><a href="#services" class="hover:text-lime-400">Services</a></li>
+                <li><a href="#use-cases" class="hover:text-lime-400">Use Cases</a></li>
+                <li><a href="#pricing" class="hover:text-lime-400">Pricing</a></li>
+                <li><a href="#blog" class="hover:text-lime-400">Blog</a></li>
+            </ul>
+        
+            <!-- Social Icons -->
+            <div class="flex items-center space-x-4">
+                <a href="#" aria-label="LinkedIn" class="hover:text-lime-400">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.293c-.966 0-1.5-.707-1.5-1.5s.534-1.5 1.5-1.5c.966 0 1.5.707 1.5 1.5s-.534 1.5-1.5 1.5zm13.5 11.293h-3v-5.656c0-1.348-.474-2.269-1.662-2.269-.905 0-1.443.61-1.681 1.201-.087.21-.108.5-.108.791v5.933h-3s.039-9.631 0-10.635h3v1.508c.4-.619 1.115-1.5 2.716-1.5 1.98 0 3.484 1.297 3.484 4.084v6.543z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Facebook" class="hover:text-lime-400">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M22 0h-20c-1.104 0-2 .896-2 2v20c0 1.104.896 2 2 2h10v-9h-3v-3h3v-3c0-2.728 1.338-5 5-5 1.205 0 2.263.089 2.561.129v2.951l-1.758.001c-1.377 0-1.743.658-1.743 1.62v2.299h3.518l-.459 3h-3.059v9h6c1.104 0 2-.896 2-2v-20c0-1.104-.896-2-2-2z" />
+                    </svg>
+                </a>
+                <a href="#" aria-label="Twitter" class="hover:text-lime-400">
+                    <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path
+                            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.896-.954-2.173-1.555-3.591-1.555-2.717 0-4.92 2.203-4.92 4.917 0 .386.043.762.127 1.124-4.09-.205-7.719-2.164-10.148-5.144-.424.724-.666 1.561-.666 2.459 0 1.697.866 3.191 2.181 4.067-.804-.026-1.561-.246-2.22-.615v.061c0 2.368 1.685 4.348 3.918 4.798-.41.111-.843.171-1.287.171-.314 0-.619-.03-.917-.086.621 1.934 2.42 3.342 4.554 3.379-1.669 1.307-3.778 2.086-6.065 2.086-.394 0-.779-.023-1.161-.067 2.162 1.385 4.731 2.192 7.496 2.192 8.997 0 13.91-7.458 13.91-13.927 0-.211-.005-.422-.014-.633.952-.688 1.779-1.549 2.434-2.533z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+           
+
+        <!-- Footer Bottom -->
+        <div class="container mx-auto px-6 mt-10 border-t border-gray-700 pt-6 text-center md:text-left text-sm">
+            <p>
+                &copy; 2023 Positivus. All Rights Reserved.
+                <a href="#" class="text-lime-400 underline">Privacy Policy</a>
+            </p>
+        </div>
+
+
+
+
+
+
+
+        
+
+
+    </footer>
+
+
+   
+    <script src="./script.js"></script>
+</body>
+
+</html>
